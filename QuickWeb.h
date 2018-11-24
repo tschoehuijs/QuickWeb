@@ -24,6 +24,7 @@ public:
   void send( String packet ); // send command to node
 
   bool isNumeric(String str); // check if incoming packet is number
+  String key; // command reference
 private:
   int _type; // define type
   int _data; // data for html
