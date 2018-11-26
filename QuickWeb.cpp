@@ -119,7 +119,7 @@ void QuickWeb::print( WiFiClient client ){
 
 	switch(_type) {
 		case 0:{
-			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node0.png\" alt=\"Home Base\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Homebase</p>\r\n</div>\r\n<div class=\"GaugeMeter gaugeMeter\" data-used=\"@1\" data-type=\"temperature\" style=\"width: 200px;\"><span style=\"line-height: 200px; font-size: 44px;\">@1<u>degC</u></span><b style=\"line-height: 276.923px; color: rgb(255, 255, 255);\">Temperature</b><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
+			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node0.png\" alt=\"Home Base\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Homebase</p>\r\n</div>\r\n<div class=\"GaugeMeter gaugeMeter\" data-used=\"@1\" data-type=\"temperature\" style=\"width: 200px;\"><span style=\"line-height: 215px; font-size: 44px;\">@1<u>degC</u></span><b style=\"line-height: 276.923px; color: rgb(255, 255, 255);\">Temperature</b><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
 			html.replace("@1", String(_data));
 		}
 		break;
@@ -138,25 +138,25 @@ void QuickWeb::print( WiFiClient client ){
 		break;
 
 		case 2:{ // temperature (kitchen)
-			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node2.png\" alt=\"Kitchen\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Kitchen</p>\r\n</div>\r\n<div class=\"GaugeMeter gaugeMeter\" data-used=\"@1\" data-type=\"temperature\" style=\"width: 200px;\"><span style=\"line-height: 200px; font-size: 44px;\">@1<u>degC</u></span><b style=\"line-height: 276.923px; color: rgb(255, 255, 255);\">Temperature</b><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
+			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node2.png\" alt=\"Kitchen\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Kitchen</p>\r\n</div>\r\n<div class=\"GaugeMeter gaugeMeter\" data-used=\"@1\" data-type=\"temperature\" style=\"width: 200px;\"><span style=\"line-height: 215px; font-size: 44px;\">@1<u>degC</u></span><b style=\"line-height: 276.923px; color: rgb(255, 255, 255);\">Temperature</b><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
 			html.replace("@1", String(_data));
 		}
 		break;
 
 		case 3:{ // temperature (outside)
-			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node1.png\" alt=\"Outside\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Outside</p>\r\n</div>\r\n<div class=\"GaugeMeter gaugeMeter\" data-used=\"@1\" data-type=\"temperature\" style=\"width: 200px;\"><span style=\"line-height: 200px; font-size: 44px;\">@1<u>degC</u></span><b style=\"line-height: 276.923px; color: rgb(255, 255, 255);\">Temperature</b><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
+			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node1.png\" alt=\"Outside\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Outside</p>\r\n</div>\r\n<div class=\"GaugeMeter gaugeMeter\" data-used=\"@1\" data-type=\"temperature\" style=\"width: 200px;\"><span style=\"line-height: 215px; font-size: 44px;\">@1<u>degC</u></span><b style=\"line-height: 276.923px; color: rgb(255, 255, 255);\">Temperature</b><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
 			html.replace("@1", String(_data));
 		}
 		break;
 
 		case 4:{ // plant (general)
-			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node4.png\" alt=\"Plant\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Plant</p>\r\n</div>\r\n<div class=\"GaugeMeter\" data-percent=\"@1\" data-type=\"soil\" style=\"width: 200px;\"><span style=\"line-height: 200px; font-size: 44px;\">@1<u>degC</u></span><b style=\"line-height: 276.923px; color: rgb(255, 255, 255);\">Moisture</b><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
+			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node4.png\" alt=\"Plant\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Plant</p>\r\n</div>\r\n<div class=\"GaugeMeter\" data-percent=\"@1\" data-type=\"soil\" style=\"width: 200px;\"><span style=\"line-height: 215px; font-size: 44px;\">@1<u>degC</u></span><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
 			html.replace("@1", String(_data));
 		}
 		break;
 
 		case 5:{ // cactus
-			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node4.png\" alt=\"Cactus\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Cactus</p>\r\n</div>\r\n<div class=\"GaugeMeter\" data-percent=\"@1\" data-type=\"soil\" style=\"width: 200px;\"><span style=\"line-height: 200px; font-size: 44px;\">@1<u>degC</u></span><b style=\"line-height: 276.923px; color: rgb(255, 255, 255);\">Moisture</b><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
+			html = "<div class=\"card\">\r\n<div class=\"container\">\r\n<img src=\"https://cdn.jsdelivr.net/gh/tschoehuijs/tschoehuijs.github.io/Images/Node4.png\" alt=\"Cactus\" height=\"80\" style=\"padding-top: 15px;\">\r\n<p>Cactus</p>\r\n</div>\r\n<div class=\"GaugeMeter\" data-percent=\"@1\" data-type=\"soil\" style=\"width: 200px;\"><span style=\"line-height: 215px; font-size: 44px;\">@1<u>degC</u></span><canvas width=\"200\" height=\"200\"></canvas></div>\r\n</div>\r\n";
 			html.replace("@1", String(_data));
 		}
 		break;
